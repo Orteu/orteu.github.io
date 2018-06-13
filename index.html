@@ -50,7 +50,10 @@
       $(document).ready(function () {
         if (screen.width<1024){
           $("#idiomas").hide();
-        }      
+        } 
+        if(screen.width>=1024){
+          $("#spanish").hide();
+        }    
       });
       
     </script>
@@ -64,8 +67,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
 
         <div id="idiomas">
-          <a href="#"><img src="img/en.png" width="50px" id="english"></a>
-          <a href="es.html"><img src="img/es.png" width="50px" id="spanish"></a>
+          <a href="#"><img src="img/en.png" width="50px"></a>
+          <a href="es.html"><img src="img/es.png" width="50px"></a>
         </div>
 
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -99,6 +102,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#pdf">PDF Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="es.html" id="spanish">Switch to Spanish</a>
           </li>
           
         </ul>
