@@ -29,12 +29,48 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/logo.png" />
 
+    <style>
+      #idiomas > a > img{
+        padding: 5px;
+        margin-top: 20px;
+
+      }
+      #idiomas > a:hover{
+        opacity: 0.5;
+      }
+      #idiomas > #english{
+        opacity: 1.5;
+      }
+    </style>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <script>
+
+      $(document).ready(function () {
+        if (screen.width<1024){
+          $("#idiomas").hide();
+        }      
+      });
+      
+    </script>
+
+    
+
   </head>
 
   <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+
+        <div id="idiomas">
+          <a href="#"><img src="img/en.png" width="50px" id="english"></a>
+          <a href="es.html"><img src="img/es.png" width="50px" id="spanish"></a>
+        </div>
+
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
+
+
         <span class="d-block d-lg-none">CV Resume</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
@@ -44,24 +80,25 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">General</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Overview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a>
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Educación</a>
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Intereses</a>
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#pdf">Descargar en PDF</a>
+            <a class="nav-link js-scroll-trigger" href="#pdf">PDF Download</a>
           </li>
           
         </ul>
@@ -78,8 +115,8 @@
           <div class="subheading mb-5">Calle Baladre 39 1C · Palma · Islas Baleares · (+34) 671 114 483 ·
             <a href="mailto:name@email.com">orteu15@gmail.com</a>
           </div>
-          <p class="mb-5">Soy técnico Superior en Administración de Sistemas y Redes (CF GS-ASIX). Muy interesado en la programación. Conocimientos en desarrollo Java adquiridos en el ciclo formativo y perfeccionados como resultado de mi interés. Actualmente aprendiendo PHP, JS y JQuery. </p>
-          <p>La programación despierta mi interés, por ello estoy ampliando conocimientos en la materia mediante cursos Udemy. Me encanta aprender lenguajes nuevos y valoro mucho a quien intenta ayudarme. Inquieto intelectualmente. </p><br>
+          <p class="mb-5">I've just been graduated in IT Studies as a Higher Technician in System Administration and Networking (CF GS-ASIX). Very interested in programming. Java and Javascript developement knowledge, learnt in the school and improved as a result of my curiosity. Actually studying React JS and Ruby.</p>
+          <p>Programming awakens my interest, that's why I am expanding knowledge in the subject through Udemy courses. I love learning new programming languages ​​and I appreciate very much people who tries to help me. Intellectually restless. </p><br>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a target="_blank" href="https://es-es.facebook.com/carlos.saizorteu">
@@ -120,41 +157,44 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
-          <h2 class="mb-5">Experiencia</h2>
+          <h2 class="mb-5">Experience</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Técnico Superior en Informática</h3>
+              <h3 class="mb-0">Junior programmer</h3>
+              <div class="subheading mb-3">Dingus Services</div>
+
+              <p>To be defined...</p>
+                
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2018 - Actually</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">IT Higher Technician</h3>
               <div class="subheading mb-3">Parlament de les Illes Balears</div>
-              <p>Prácticas de final de ciclo cursadas en el Parlamento de las Islas Baleares. Trabajé tanto administrando sistemas, como en asistencia a usuarios. También se me asignaron proyectos como el desarrollo de una directiva completa para adaptar los sistemas al Esquema Nacional de Seguridad (ENS) en Windows 10. </p>
+
+              <p>End-of-cycle internships held in the Parliament of the Balearic Islands. I worked both managing systems, as well as user assistance. I was also assigned projects such as the development of a complete directive (GPO) to adapt the systems to the National Security Scheme (ENS) in Windows 10. </p>
+                
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">Marzo 2018 - Actualmente</span>
+              <span class="text-primary">March 2018 - July 2018</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Administrativo</h3>
+              <h3 class="mb-0">Administrative</h3>
               <div class="subheading mb-3">Correos Express</div>
-              <p>Administración del sistema de Correos Express, reportar incidencias, solución de fallos en el sistema y uso de herramientas de ofimática para el correcto funcionamiento de la empresa.</p>
+              <p>Management of Correos Express' system, reporting incidents, solution of system failures and use of office automation tools for the correct operation of the company.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">Junio 2017 - Noviembre 2017</span>
+              <span class="text-primary">June 2017 - November 2017</span>
             </div>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Trabajos varios en hostelería</h3>
-              <div class="subheading mb-3">Empresas varias</div>
-              <p>He trabajado en varios empleos de cara al público. Lo importante en sí de ellos es que algunos los realicé en Manchester, Reino Unido, donde viví dos años, por lo que mi nivel de inglés es muy alto.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">2013-2017</span>
-            </div>
-          </div>
-
           
         </div>
 
@@ -162,28 +202,40 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
-          <h2 class="mb-5">Educación</h2>
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Universitat Oberta de Catalunya</h3>
+              <div class="subheading mb-3">IT Engineering</div>
+              <div>I'm starting to study a University degree on September</div>
+              
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2018 - To be defined</span>
+            </div>
+          </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">IES Emili Darder</h3>
-              <div class="subheading mb-3">Ciclo Formativo de Grado Superior</div>
-              <div>Administración de Sistemas Informáticos y Redes</div>
+              <div class="subheading mb-3">Higher Education</div>
+              <div>System administration and networking</div>
               
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">Septiembre 2016 - Junio 2018</span>
+              <span class="text-primary">September 2016 - June 2018</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">IES Antoni Maura</h3>
-              <div class="subheading mb-3">Bachillerato</div>
+              <div class="subheading mb-3">Bachelor's degree</div>
               
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">Septiembre 2012 - Junio 2014 </span>
+              <span class="text-primary">September 2012 - June 2014 </span>
             </div>
           </div>
 
@@ -192,9 +244,9 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
-          <h2 class="mb-5">Habilidades</h2>
+          <h2 class="mb-5">Skills</h2>
 
-          <div class="subheading mb-3">Lenguajes y herramientas</div>
+          <div class="subheading mb-3">Programming Languages and Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
               <i class="devicons devicons-html5"></i>
@@ -246,7 +298,7 @@
             </li>                 
           </ul>
 
-          <div class="subheading mb-3">Bases de datos utilizadas</div>
+          <div class="subheading mb-3">Databases I've worked with</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
               <i class="devicon-mysql-plain"></i>
@@ -259,7 +311,7 @@
             </li>  
           </ul>  
 
-          <div class="subheading mb-3">Cursando actualmente</div>
+          <div class="subheading mb-3">Actually learning</div>
           <ul class="list-inline list-icons">
              
             <li class="list-inline-item">
@@ -276,38 +328,39 @@
             </li>
           </ul>
 
-          <div class="subheading mb-3">Adicional</div>
+          <div class="subheading mb-3">Additional</div>
           <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-check"></i>
-              Activamente ampliando mi conocimiento</li>
+              Actively expanding my knowledge</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>              
+              Passion for the well done work
+            </li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Gusto por el trabajo bien hecho</li>
+              Adaptable to teamwork</li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Adaptable al trabajo en equipo</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Nivel de inglés nativo</li>
+              High level of English learned in Manchester</li>
           </ul>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
-          <h2 class="mb-5">Intereses</h2>
-          <p>Aunque mi ciclo formativo sea de la rama de administración de sistemas, en la cual me desenvuelvo muy bien, hemos aprendido programación con Java y ahí es donde me he dado cuenta que mis inquietudes son en ese campo, la programación, tanto front-end como back-end.</p>
-          <p class="mb-0">Aparte del mundo de la informática, soy un chico deportista y activo. Juego a fútbol durante el año y en verano suelo practicar el wind-surf.</p>
-          <p>Mi plan es encontrar trabajo y empezar a cursar el grado de Ingeniería Informática a distancia en la UOC.</p>
-          <p>Mi trabajo ideal seria uno en el cual se me desafie cada dia, forzandome a aprender cosas nuevas. </p>
+          <h2 class="mb-5">Interests</h2>
+          <p>Although my studying cycle was based on system administration, and I feel really confident working with it, we have learned programming with Java and that is where I have realized that my concerns are in that field, programming, both front-end and back-end</p>
+          <p class="mb-0">Apart from the computer world, I am a sportsman and active boy. I play football during the year and in summertime I practice wind-surfing.</p>
+          <p>My plan while I'm studying is to find a stable job in computer science.</p>
+          <p>My ideal job would be challenger every day, forcing myself to learn new things.</p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="pdf">
         <div class="my-auto"><center>
-          <h2 class="mb-5">Descargar en PDF</h2>
-          <p>Te interesa tener mi Curriculum en PDF? Ningún problema!</p><br>
+          <h2 class="mb-5">PDF Download</h2>
+          <p>Are you interested in having my CV in PDF? No problem at all.</p><br>
           <a target="_blank" href="CV.pdf"><img src="img/pdf.jpg" width="25%"></a></center>
         </div>
         
@@ -322,7 +375,7 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -330,6 +383,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
 
   </body>
 
